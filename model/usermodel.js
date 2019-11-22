@@ -8,7 +8,8 @@ var UserSchema=mongoose.Schema({
 //    email:{type:String,default:''},
 
     password:{type:String},
-    phone:{type:Number},
+    confirmPassword:{type:String},
+    phone:{type:String},
     age:{type:Number},
     onetimepass:{type:String},
     expiredTime:{type:String},

@@ -380,6 +380,15 @@ const UserMethdos = {
         }
       }
     });
+  },
+  fileUpload(req,res){
+    console.log(req.files)
+    return res.json({
+      data: req.files,
+      success: 0,
+      msg: "File Uploaded Succedddssfully",
+      file: req.file
+    });
   }
 };
 
